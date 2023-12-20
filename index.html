@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sorting Visualizer</title>
+</head>
+<body>
+    <div class="heading"><H2>Comparison Sorting Algorithms</H2></div>
+  <div id="controls">
+    <div class="upper_btn">
+    <button id="btn" onclick="randomizeArray()">Randomize Array</button>
+    <button id="btn" onclick="insertionSort()">Insertion Sort</button>
+    <button id="btn" onclick="selectionSort()">Selection Sort</button>
+    <button id="btn" onclick="bubbleSort()">Bubble Sort</button>
+    <button id="btn" onclick="quickSort()">Quick Sort</button>
+    <button id="btn" onclick="mergeSort()">Merge Sort</button>
+    <button id="btn" onclick="shellSort()">Shell Sort</button>
+    <button id="btn" onclick="changeSize()">Change Size</button>
+    </div>
+    
+    <div id="sorting-visualizer"></div>
+
+    <div class="lower_btn">
+      <div class="btns">
+        <button id="btn" onclick="skipBack()">Skip Back</button>
+        <button id="btn" onclick="stepBack()">Step Back</button>
+        <button id="btn" onclick="pause()">Pause</button>
+        <button id="btn" onclick="stepForward()">Step Forward</button>
+        <button id="btn" onclick="skipForward()">Skip Forward</button>
+        <label for="animationSpeed">Animation Speed:</label>
+        <input type="range" id="animationSpeed" min="1" max="10" value="5" onchange="changeSpeed(this.value)">
+        <label for="canvasSize">Canvas Size:</label>
+        <input type="number" id="canvasSize" value="50" onchange="changeCanvasSize(this.value)">
+        <label for="barWidth">Bar Width:</label>
+        <input type="number" id="barWidth" value="20" onchange="changeBarWidth(this.value)">
+        </div>   
+         <div class="Bottom_heading"><H3>Algorithm Visualizations</H3></div>
+
+      </div>
+    
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
